@@ -1,6 +1,7 @@
 package com.antcar.sfgdi;
 
 import com.antcar.sfgdi.controllers.ConstructorInjectedController;
+import com.antcar.sfgdi.controllers.I18nController;
 import com.antcar.sfgdi.controllers.MyController;
 import com.antcar.sfgdi.controllers.PropertyInjectedController;
 import com.antcar.sfgdi.controllers.SetterInjectedController;
@@ -13,6 +14,9 @@ public class SfgDiApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
+
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		System.out.println(i18nController.sayHello());
 
 		System.out.println("----- Primary Bean");
 		MyController myController = (MyController) ctx.getBean("myController");
