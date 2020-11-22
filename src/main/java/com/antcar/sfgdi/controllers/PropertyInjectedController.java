@@ -1,9 +1,13 @@
 package com.antcar.sfgdi.controllers;
 
 import com.antcar.sfgdi.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class PropertyInjectedController {
 
+    @Autowired
     public GreetingService greetingService;
 
     public String getGreeting() {
