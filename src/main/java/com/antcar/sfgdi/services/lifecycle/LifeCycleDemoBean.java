@@ -1,4 +1,4 @@
-package com.antcar.sfgdi.services;
+package com.antcar.sfgdi.services.lifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;

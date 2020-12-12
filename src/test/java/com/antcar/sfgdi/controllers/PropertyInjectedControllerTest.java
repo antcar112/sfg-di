@@ -1,6 +1,6 @@
 package com.antcar.sfgdi.controllers;
 
-import com.antcar.sfgdi.services.ConstructorGreetingService;
+import com.antcar.sfgdi.services.dependencyinjection.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
