@@ -1,0 +1,38 @@
+# This is a comment
+
+name: Thony
+
+names: # inline comments
+  - John
+  - Paul
+  - Ringo
+  - George
+
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: random house
+
+# Booleans
+truth: yes
+another_truth: True
+more_true: true
+false: no
+another_false: False
+final_false: false
+
+string val: "This is it's quote" # Need double quotes to escape single '
+colon_string: "Need to escape : as well"
+
+include_new_lines: |
+  line one
+  line two
+  line three
+  all new lines when using the pipe char
+
+ignore_new_lines: >
+  this is
+  just one string
+  in one line when parsed
+  thanks to the > char

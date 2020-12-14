@@ -1,0 +1,5 @@
+antcar:
+  jms:
+    username: JMS Username in yaml
+    password: JMS password
+    url: JMS URL
