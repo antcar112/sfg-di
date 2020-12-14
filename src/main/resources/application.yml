@@ -3,3 +3,10 @@ antcar:
     username: JMS Username in yaml
     password: JMS password
     url: JMS URL
+
+--- # Indicates file separator
+spring:
+  profiles: DE
+antcar:
+  jms:
+    username: JMS German Username
