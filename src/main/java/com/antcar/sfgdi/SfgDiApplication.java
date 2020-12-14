@@ -2,6 +2,7 @@ package com.antcar.sfgdi;
 
 import com.antcar.sfgdi.controllers.I18nController;
 import com.antcar.sfgdi.examplebeans.FakeDataSource;
+import com.antcar.sfgdi.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -17,8 +18,9 @@ public class SfgDiApplication {
 
 		FakeDataSource fakeDataSource = ctx.getBean(FakeDataSource.class);
 		System.out.println(fakeDataSource.getUser());
-		System.out.println(fakeDataSource.getPassword());
-		System.out.println(fakeDataSource.getUrl());
+
+		FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
+		System.out.println(fakeJmsBroker.getUsername());
 
 	}
 
